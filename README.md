@@ -11,7 +11,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://t.me/medovi40k" target="blank"><img align="center" src="https://commons.wikimedia.org/wiki/File:Telegram_2019_Logo.svg" alt="medovi40k" height="30" width="40" /></a>
+<a href="https://t.me/medovi40k" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="medovi40k" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
