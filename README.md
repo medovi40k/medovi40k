@@ -7,7 +7,7 @@
 
 - 📫 How to reach me **medovi40ks@gmail.com**
 
-- ⚡ Fun fact **I love my cat**
+- ⚡ Fun fact **I used to love my cat... R.I.P.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
