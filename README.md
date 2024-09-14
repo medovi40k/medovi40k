@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm medovi40k</h1>
-<h3 align="center">A back-end programmer from Russia.</h3>
+<h3 align="center">A back-end programmer</h3>
 
 - 🔭 I’m currently working on **My own website**
 
