@@ -1,13 +1,12 @@
 <h1 align="center">Hi 👋, I'm medovi40k</h1>
 <h3 align="center">A back-end programmer from Russia.</h3>
 
-- 🔭 I’m currently working on **DiscordLimboAuth**
+- 🔭 I’m currently working on **My own website**
 
-- 💬 Ask me about **Minecraft development**
+- 💬 Ask me about **everything**
 
 - 📫 How to reach me **medovi40ks@gmail.com**
 
-- ⚡ Fun fact **I used to love my cat... R.I.P.** (not fun as you see)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
