@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm medovi40k</h1>
 <h3 align="center">A back-end programmer</h3>
 
-- 🔭 I’m currently working on **Hackathon project**
+- 🔭 I’m currently working on **nothing**
 
 - 💬 Ask me about **everything**
 
