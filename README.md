@@ -75,6 +75,10 @@ class Medovi40k:
   <img src="profile/streak.svg" alt="GitHub Streak" />
 </p>
 
+<p align="center">
+  <img src="profile/activity.svg" width="100%" alt="Contribution activity over the last 12 months" />
+</p>
+
 ---
 
 ### 🔭 Currently
