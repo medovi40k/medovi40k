@@ -1,0 +1,63 @@
+name: Update profile stats
+
+# The public github-readme-stats and streak-stats servers are often down or
+# rate-limited, so the cards are generated here and committed to profile/.
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/profile-stats.yml"
+      - "scripts/streak_card.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      # Add a STATS_TOKEN secret (PAT with read:user + repo) to include private
+      # contributions; otherwise only public activity is counted.
+      - name: Stats card
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&count_private=true
+          path: profile/stats.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Top languages card
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true&langs_count=8
+          path: profile/top-langs.svg
+          token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Streak card
+        continue-on-error: true
+        run: python3 scripts/streak_card.py --user "${{ github.repository_owner }}" --out profile/streak.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -m "Update profile stats cards"
+          git push origin "HEAD:${{ github.ref_name }}"
