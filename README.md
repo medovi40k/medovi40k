@@ -1,7 +1,7 @@
 <h1 align="center">Hey, I'm Daniil <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30"></h1>
 
 <p align="center">
-  <em>Python back-end developer · DevOps · Bots, APIs & payments</em>
+  <em>Python back-end developer · DevOps · Bots, APIs & servers</em>
 </p>
 
 <p align="center">
@@ -20,14 +20,13 @@ class Medovi40k:
     role = ["Back-end Developer", "DevOps"]
     main_lang = "Python"
     coding_since = 2021
-    focus = ["bots", "APIs", "back-end", "servers", "payments"]
+    focus = ["bots", "APIs", "back-end", "servers"]
     languages = {"Russian": "native", "English": "C1", "Portuguese": "learning"}
     open_to = ["full-time", "freelance / one-off tasks"]
 ```
 
 - 🛡️ Worked on a **VPN service with 20,000+ users**: built and maintained the support system, website, usage stats and server access management
 - 🖥️ I set up and run servers: Linux, Docker, VPN panels like **Remnawave**
-- 💳 **Fintech & payments**: payment integrations, crypto payments, and paying foreign hosting providers and services from tricky regions
 - 🤖 I write Telegram bots, API clients, parsers and back-end services in Python
 - 🏆 Won a few hackathons
 - 🎓 Certified: *Building with Claude API* (Anthropic)
@@ -68,12 +67,16 @@ class Medovi40k:
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=medovi40k&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=medovi40k&layout=compact&theme=tokyonight&hide_border=true" height="165" alt="Top Languages" />
+  <img src="profile/stats.svg" height="165" alt="GitHub Stats" />
+  <img src="profile/top-langs.svg" height="165" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=medovi40k&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img src="profile/streak.svg" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="profile/activity.svg" width="100%" alt="Contribution activity over the last 12 months" />
 </p>
 
 ---
